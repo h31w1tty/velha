@@ -1,0 +1,205 @@
+body{
+    text-align: center;
+    font-size: 20px;
+}
+p{
+    margin:0;
+}
+
+/*---------------- placar -----------------*/
+.placar{
+    margin-inline: auto;
+    width: fit-content;
+    display: flex;
+    padding: 5px;
+    border: 2px solid black;
+}
+.plac1, .plac2{
+    margin-inline: 5px;
+    display: flex;
+    border: 2px solid rgb(13, 103, 199);
+    padding: 2px;
+}
+.forma{
+    width: 20px;
+}
+/*------------------------------------------*/
+
+/*----------quadrados do jogo---------------*/
+
+main{
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.linha1, .linha2, .linha3{
+    display: flex;
+}
+
+.quad1, .quad2, .quad3, .quad4, .quad5, .quad6, .quad7, .quad8, .quad9{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+.quad1{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.quad2{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.quad3{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.quad4{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.quad5{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.quad6{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.quad7{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+.quad8{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+.quad9{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+/*-------------------- Xis e Bolinha ------------------*/
+img {
+    display: none;
+    width: 70px;
+    margin: 15px;
+}
+
+/*------------linhas finais---------------*/
+
+.linha{
+    display: none;
+}
+.d19{
+    background-color: black;
+    position: absolute;
+    top: 151px;
+    left: -54px;
+    rotate: 45deg;
+    width: 421px;
+    height: 11px;
+    border-radius: 10px;
+}
+.d37{
+    background-color: black;
+    position: absolute;
+    top: 146px;
+    left: -54px;
+    rotate: 135deg;
+    width: 421px;
+    height: 11px;
+    border-radius: 10px;
+}
+.v28{
+    background-color: black;
+    position: absolute;
+    top: 151px;
+    left: -13px;
+    rotate: 90deg;
+    width: 334px;
+    height: 11px;
+    border-radius: 10px;
+}
+.v17{
+    background-color: black;
+    position: absolute;
+    top: 151px;
+    left: -117px;
+    rotate: 90deg;
+    width: 334px;
+    height: 11px;
+    border-radius: 10px;
+}
+.v39{
+    background-color: black;
+    position: absolute;
+    top: 151px;
+    left: 91.4px;
+    rotate: 90deg;
+    width: 334px;
+    height: 11px;
+    border-radius: 10px;
+}
+.h13{
+    background-color: black;
+    position: absolute;
+    top: 44px;
+    left: -15px;
+    rotate: 0deg;
+    width: 334px;
+    height: 11px;
+    border-radius: 10px;
+}
+.h46{
+    background-color: black;
+    position: absolute;
+    top: 148px;
+    left: -15px;
+    rotate: 0deg;
+    width: 334px;
+    height: 11px;
+    border-radius: 10px;
+}
+.h79{
+    background-color: black;
+    position: absolute;
+    top: 252.14px;
+    left: -15px;
+    rotate: 0deg;
+    width: 334px;
+    height: 11px;
+    border-radius: 10px;
+}
+/*--------cuidando do reset-----------*/
+button{
+    position: absolute;
+    display: none;
+    width: 92px;
+    padding: 1px;
+    border-radius: 3px;
+    border: black 2px solid;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 20px;
+    height: 28px;
+    left: 108px;
+    bottom: 53px;
+    cursor: pointer;
+    z-index: 100;
+}
+.bloqueio{
+    background-color: #37272700;
+    width: 308px;
+    height: 308px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    display: none;
+}

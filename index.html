@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha!</title>
+</head>
+<body>
+    <h1>Jogo da Velha</h1><br>
+    <div class="placar">
+        <div class="plac1">
+            <svg class="forma circulo" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"></path>
+            </svg>
+            <!--Placar O--><p class="placaro">0</p>
+        </div>
+        VS
+        <div class="plac2">
+            <!--PLACAR X--><p class="placarx">0</p>
+            <svg class="forma xis" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 20 20 4"></path>
+                <path d="M20 20 4 4"></path>
+            </svg>
+        </div>
+    </div>
+    <h2 class="status"></h2>
+    
+    <div class="vez">
+        
+    </div>
+    <br>
+
+    <main style="position: relative;">
+        <div class="linha d19"></div>
+        <div class="linha d37"></div>
+        <div class="linha v28"></div>
+        <div class="linha v39"></div>
+        <div class="linha v17"></div>
+        <div class="linha h13"></div>
+        <div class="linha h46"></div>
+        <div class="linha h79"></div>
+        <div class="linha1">
+            <div class="quad1"><img class="o" src="o.svg" alt=""><img class="x" src="xis.svg" alt=""></div>
+            <div class="quad2"><img class="o" src="o.svg" alt=""><img class="x" src="xis.svg" alt=""></div>
+            <div class="quad3"><img class="o" src="o.svg" alt=""><img class="x" src="xis.svg" alt=""></div>
+        </div>
+        <div class="linha2">
+            <div class="quad4"><img class="o" src="o.svg" alt=""><img class="x" src="xis.svg" alt=""></div>
+            <div class="quad5"><img class="o" src="o.svg" alt=""><img class="x" src="xis.svg" alt=""></div>
+            <div class="quad6"><img class="o" src="o.svg" alt=""><img class="x" src="xis.svg" alt=""></div>
+        </div>
+        <div class="linha3">
+            <div class="quad7"><img class="o" src="o.svg" alt=""><img class="x" src="xis.svg" alt=""></div>
+            <div class="quad8"><img class="o" src="o.svg" alt=""><img class="x" src="xis.svg" alt=""></div>
+            <div class="quad9"><img class="o" src="o.svg" alt=""><img class="x" src="xis.svg" alt=""></div>
+        </div>
+        <div class="linhas">
+            <div>
+                
+            </div>
+        </div>
+        <button onclick="reset()">resetar</button>
+        <div class="bloqueio"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
