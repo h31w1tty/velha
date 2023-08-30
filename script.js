@@ -309,25 +309,30 @@ function fim(){
         status = "fim"
         o++;
     }
+    else if(marca1 && marca2 && marca3 && marca4 && marca5 && marca6 && marca7 && marca8 && marca9){
+        status = "VELHA!!"
+    }
 
     estado();
     placar();
 }
-//ADICIONAR BLOQUEIO POS FIM
 
+//MUDA O PLACAR
 function placar(){
     placarX.textContent=x;
     placarO.textContent=o;
 }
 
+//ADICIONAR BLOQUEIO e MOSTRA BOTAO e MUDA TEXTO pra status
 function estado(){
     STATUS.textContent = status;
-    if(status == "fim"){
+    if(status == "fim" || status == "VELHA!!"){
         bloqueio.style.display = "grid";
         document.querySelector('button').style.display = "grid"
     }
 }
 
+//LIMPA TUDO menos placar
 function reset(){
     document.querySelector('button').style.display = "none";
     document.querySelector('.quad1 .x').style.display = "none";
